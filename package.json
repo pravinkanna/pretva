@@ -4,15 +4,16 @@
   "description": "Interview app for PretVA",
   "main": "server.js",
   "scripts": {
-    "run": "node server.js",
+    "start": "node server.js",
     "build": "npm run build --prefix client",
     "client": "npm start --prefix client",
     "server": "nodemon server.js",
-    "dev": "npm run client && npm run server"
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Pravin kanna P",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^5.3.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.10.7"
