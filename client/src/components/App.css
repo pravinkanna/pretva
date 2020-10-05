@@ -2,3 +2,7 @@
 .bold {
   font-weight: 700;
 }
+
+.button.capsule {
+  border-radius: 50px;
+}

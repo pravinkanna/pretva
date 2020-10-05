@@ -12,13 +12,13 @@ function Navbar() {
       <ul className="navbar__middle">
         <li>About</li>
         <li>Services</li>
-        <li class="selected">Search</li>
+        <li className="selected">Search</li>
         <li>Feedback&nbsp;&amp;&nbsp;Support</li>
       </ul>
 
       <ul className="navbar__right">
         <li>
-          <i class="far fa-bell"></i>
+          <i className="far fa-bell"></i>
         </li>
         <li className="border">My&nbsp;Account</li>
         <li className="background">Logout</li>
