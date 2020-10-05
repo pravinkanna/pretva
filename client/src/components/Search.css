@@ -1,0 +1,8 @@
+.search {
+  margin: 50px;
+}
+
+.search__path > p {
+  font-size: 1.3rem;
+  color: #194344;
+}
