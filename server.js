@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+const cors = require('cors')
 
 //Mongoose model
 const Product = require('./models/Product')
@@ -15,6 +16,7 @@ mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology
 
 //Middlewares
 app.use(express.json())
+app.use(cors())
 
 //Routes
 app.post('/products', async (req, res) => {

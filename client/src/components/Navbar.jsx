@@ -17,9 +17,6 @@ function Navbar() {
       </ul>
 
       <ul className="navbar__right">
-        <li>
-          <i className="far fa-bell"></i>
-        </li>
         <li className="border">My&nbsp;Account</li>
         <li className="background">Logout</li>
       </ul>

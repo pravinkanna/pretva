@@ -6,3 +6,15 @@
 .button.capsule {
   border-radius: 50px;
 }
+
+button:focus {
+  outline: 0;
+}
+
+select:focus {
+  outline: 0;
+}
+
+input:focus {
+  outline: 0;
+}
