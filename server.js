@@ -25,8 +25,17 @@ app.post('/products', async (req, res) => {
     res.send(products);
 })
 
+if (process.env.NODE_ENV === 'production') {
+    // To use Production Build
+    app.use(express.static('client/build'));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+    });
+}
+
 //Server 
-const PORT = 3001 || process.env.PORT;
+const PORT = 3002 || process.env.PORT;
 app.listen(PORT, () => {
     console.log("server started on PORT:", PORT);
 })
